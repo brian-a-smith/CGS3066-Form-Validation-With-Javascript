@@ -1,0 +1,77 @@
+<!--BRIAN SMITH CGS3066-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" rel="script" src="js/scripts.js" defer></script>
+</head>
+<body>
+
+<div class="content">
+    <div id="form-container" class="column">
+        <h1>Form</h1>
+        <form id="main-form">
+            <div class="row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text"/>               
+            </div>
+            <div class="row">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text"/>                
+            </div>
+            <div class="row">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password"/>                
+            </div>
+            <div class="row">
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number"/>                
+            </div>
+            <div class="row">
+                <label for="bio" style="vertical-align: top;">Short Bio</label>
+                <textarea id="bio" name="bio"></textarea>                
+            </div>
+            <div class="row">
+                <span style="vertical-align: top;">Gender</span>
+                <div id="genders">
+                    <input type="radio" value="xx" name="gender">Female</input>
+                    <br/>
+                    <input type="radio" value="xy" name="gender">Male</input>
+                    <br/>
+                    <input type="radio" value="oth" name="gender">Other</input>
+                    <br/>
+                    <input type="radio" value="pns" name="gender" checked>Prefer not to say</input>
+                </div>
+            </div>
+            <div class="row">
+                <input id="udogs" name="udogs" type="checkbox">I certify that I like dogs</input>
+            </div>
+            <div class="row">
+                <label for="topdog">Favorite dog breed: </label>
+                <select id="topdog" name="topdog">
+                    <option value="0">I did not say I like dogs</option>
+                    <option value="1">Labrador</option>
+                    <option value="2">Golden Retreiver</option>
+                    <option value="3">Corgi</option>
+                    <option value="4">Chihuahua</option>
+                    <option value="5">Other</option>
+                </select>               
+            </div>
+
+            <div class="row">
+                <input id="submit-btn" name="submit-btn" type="submit" value="Submit"/>
+            </div>
+        </form>
+    </div>
+    <div id="output-container" class="column">
+        <h1>Result</h1>
+        <div id="output">
+            Form not submitted yet
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
